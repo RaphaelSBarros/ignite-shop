@@ -14,6 +14,10 @@ const compat = new FlatCompat({
 export default [
   ...compat.extends('@rocketseat/eslint-config/next'),
   {
-    rules: {},
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-empty-function': 'off',
+      '@typescript-eslint/no-empty-object-type': 'off',
+    },
   },
 ]
