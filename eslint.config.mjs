@@ -12,12 +12,8 @@ const compat = new FlatCompat({
 })
 
 export default [
-  ...compat.extends('@rocketseat/eslint-config/react'),
+  ...compat.extends('@rocketseat/eslint-config/next'),
   {
-    rules: {
-      '@typescript-eslint/no-explicit-any': 'off',
-      '@typescript-eslint/no-empty-function': 'off',
-      '@typescript-eslint/no-empty-object-type': 'off',
-    },
+    rules: {},
   },
 ]
